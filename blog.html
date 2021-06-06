@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tropico | Blog</title>
+    <meta name="description"
+        content="The Tropico blog has many unique and thorough blog posts from from different exotic places all over the world, which details how life is living in the tropics and how visitors can make the most of their journey." />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Pacifico&family=Permanent+Marker&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="stylesheet" href="/css/blog.css" />
+
+    <!-- Hotjar Tracking Code for https://tropicoblog.netlify.app/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2412152, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">Tropico</a>
+            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="current-page"><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-container">
+                <div class="search-container">
+                    <input class="search-input" type="text" name="text-search" placeholder="Type to search" />
+                    <a class="search-btn">
+                        <i class="fas fa-search search-icon"></i>
+                    </a>
+                </div>
+                <div class="social-container">
+                    <i class="fab fa-facebook-square social-icon"></i>
+                    <i class="fab fa-instagram-square social-icon"></i>
+                    <i class="fab fa-twitter-square social-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="blog-section" id="nav">
+            <div class="container">
+                <div class="breadcrumb">
+                    <p><a href="index.html">Home </a>><span class="bold-text"> Blog</span></p>
+                </div>
+                <h1>Blog Posts</h1>
+                <div class="blog-container">
+                    <div class="error-container">
+                        <div class="loader"></div>
+                    </div>
+                    <!-- API Content -->
+                </div>
+
+            </div>
+            <button class="viewmore-btn">View more</button>
+        </div>
+    </main>
+    <footer>
+        <div class=" footer-container">
+            <div class="footer-social-container">
+                <h4>Follow us on</h4>
+                <h4>social media</h4>
+                <div class="icon-container">
+                    <i class="fab fa-facebook-square social-footer"></i>
+                    <i class="fab fa-instagram-square social-footer"></i>
+                    <i class="fab fa-twitter-square social-footer"></i>
+                </div>
+            </div>
+            <div class="newsletter-container">
+                <form id="newsletterForm">
+                    <label for="newsletterEmail">Sign up to our newsletter</label>
+                    <input id="newsletterEmail" class="input-form" type="text" name="newsletterEmail" placeholder="Please Enter Your E-mail">
+                    <div class="form-error" id="newsletterEmailError">Please enter a valid e-mail address</div>
+                    <button class="newsletter-btn" type="submit">Sign up</button>
+                </form>
+            </div>
+            <div class="arrow-container">
+                <a href="#nav">
+                    <i class="fas fa-arrow-up arrow-up"></i>
+                </a>
+            </div>
+        </div>
+        <p class="copyright">&#169; 2021 Tropico Blog, Patrick Werner. All rights reserved.</p>
+    </footer>
+    <script src="./js/newsletter.js"></script>
+    <script src="./js/displayError.js"></script>
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>

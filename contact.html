@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tropico | Contact</title>
+    <meta name="description"
+        content="Tropico's team are working hard all over the world to keep the blog updated with new content. If you want to contribute to our content and/or may have other requests, please send us a message using the form on our contact page." />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Pacifico&family=Permanent+Marker&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="stylesheet" href="/css/contact.css" />
+
+    <!-- Hotjar Tracking Code for https://tropicoblog.netlify.app/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2412152, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">Tropico</a>
+            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="current-page"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-container">
+                <div class="search-container">
+                    <input class="search-input" type="text" name="text-search" placeholder="Type to search" />
+                    <a class="search-btn">
+                        <i class="fas fa-search search-icon"></i>
+                    </a>
+                </div>
+                <div class="social-container">
+                    <i class="fab fa-facebook-square social-icon"></i>
+                    <i class="fab fa-instagram-square social-icon"></i>
+                    <i class="fab fa-twitter-square social-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section" id="nav">
+            <div class="breadcrumb">
+                <p><a href="index.html">Home </a>><span class="bold-text"> Contact</span></p>
+            </div>
+            <h1>Contact</h1>
+            <div class="container">
+                <div class="contact-content">
+
+                    <form id="contactForm">
+
+                        <div class="input-box">
+                            <label for="contactName">
+                                Name
+                            </label>
+                            <input class="input-form" name="contactName" id="contactName"
+                                placeholder=" Type in your name">
+                            <div class="form-error" id="contactNameError">Your name must be at least 5 characters</div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="contactEmail">
+                                E-mail
+                            </label>
+                            <input class="input-form" name="contactEmail" id="contactEmail"
+                                placeholder=" Type in your e-mail address" />
+                            <div class="form-error" id="contactEmailError">Please enter a valid e-mail address</div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="contactSubject">
+                                Subject
+                            </label>
+                            <input class="input-form" name="contactSubject" id="contactSubject"
+                                placeholder=" Type in your subject">
+                            <div class="form-error" id="contactSubjectError">Your subject must be at least 15 characters
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="contactMessage">
+                                Message
+                            </label>
+                            <textarea name="contactMessage" id="contactMessage"
+                                placeholder=" Type in your message"></textarea>
+                            <div class="form-error" id="contactMessageError">Your message must be at least 25 characters
+                            </div>
+                        </div>
+
+                        <button class="contact-btn" type="submit">Send Message</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social-container">
+                <h4>Follow us on</h4>
+                <h4>social media</h4>
+                <div class="icon-container">
+                    <i class="fab fa-facebook-square social-footer"></i>
+                    <i class="fab fa-instagram-square social-footer"></i>
+                    <i class="fab fa-twitter-square social-footer"></i>
+                </div>
+            </div>
+            <div class="newsletter-container">
+                <form class="newsletter-form" id="newsletterForm">
+                    <label class="label" for="newsletterEmail">Sign up to our newsletter</label>
+                    <input id="newsletterEmail" class="newsletter-input" type="text" name="newsletterEmail" placeholder="Please Enter Your E-mail">
+                    <div class="form-error" id="newsletterEmailError">Please enter a valid e-mail address</div>
+                    <button class="newsletter-btn" type="submit">Sign up</button>
+                </form>
+            </div>
+            <div class="arrow-container">
+                <a href="#nav">
+                    <i class="fas fa-arrow-up arrow-up"></i>
+                </a>
+            </div>
+        </div>
+        <p class="copyright">&#169; 2021 Tropico Blog, Patrick Werner. All rights reserved.</p>
+    </footer>
+    <script src="./js/newsletter.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>
